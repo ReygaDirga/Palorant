@@ -1,0 +1,80 @@
+
+.wrapper {
+    top: 700px;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.wrapper .title h1 {
+    color: #c5ecfd;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.input-fields .input, .msg textarea {
+    margin: 10px 0;
+    background: transparent;
+    padding: 10px;
+    color: #c5ecfd;
+    width: 95%;
+    border-radius: 5px;
+}
+
+.msg {
+    width: 48%;
+}
+
+.msg textarea {
+    height: 212px;
+    resize: vertical;
+}
+
+.baten {
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form {
+        flex-direction: column;
+    }
+    
+    .input-fields, .msg {
+        width: 100%;
+    }
+    
+    .msg textarea {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        padding: 20px;
+    }
+    .baten {
+        padding: 12px;
+    }
+}

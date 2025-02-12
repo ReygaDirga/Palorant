@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="query.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/2.ico" type="image/x-icon">
+    <title>Palorant</title>
+</head>
+
+<body>
+    <section class="hero-section">
+        <nav class="navbar">
+            <div class="data-container">
+                <img src="img/GG.png" class="gg">
+                <img src="img/text.png" class="Logo">
+                <div id="menu-time" class="menu-data animate__animated ">
+                    <a id="close-icon" onclick="closebar()">&#215;</a>
+                    <a href="index.html">HomePage</a>
+                    <a href="AgentPage.html">AgentPage</a>
+                    <a href="MapsPage.html">MapsPage</a>
+                    <a href="NewsPage.html">NewsPage</a>
+                    <a href="report.html">Report</a>
+                </div>
+                <a id="Menu-bar" onclick="menubar()">&#8801;</a>
+            </div>
+        </nav>
+        
+        <div class="menu">
+            <h1 style="text-align: center; font-size: xx-large; ">AGENT</h1>
+            <div class="menu-grid">
+
+                <div class="menu-card" onclick="agentJet()">
+                    <img src="img/Jetlag.png" alt="Agent Bejo">
+                    <div class="menu-info">
+                        <h2>Jetlag</h2>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="agentNova()">
+                    <img src="img/nova.png" alt="Agent Nova">
+                    <div class="menu-info">
+                        <h2>Nova</h2>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="agentGrim()">
+                    <img src="img/Grimstone.png" alt="Agent Bejo">
+                    <div class="menu-info">
+                        <h2>Grimstone</h2>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="agentAmen()">
+                    <img src="img/Amen.png" alt="Agent Bejo">
+                    <div class="menu-info">
+                        <h2>Amen</h2>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="agentSky()">
+                    <img src="img/Skyline.png" alt="Agent Bejo">
+                    <div class="menu-info">
+                        <h2>Skyline</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="abilitisagent" class="abilitisagent">
+            <div class="abilitisagent-content">
+                <button class="close-popup" onclick="closePopup()">Tutup</button>
+                <div class="header">
+                    <img src="img/Jetlag.png" alt="Jett Agent Image">
+                    <h1>JETLAG</h1>
+                    <h2>DUELIST</h2>
+                </div>
+                <div class="abilities">
+                    <div class="ability">
+                        <h2>Q - UPDRAFT</h2>
+                        <p>Instantly propel Jett high into the air.</p>
+                        <video autoplay loop muted>
+                            <source src="Video/jet1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="ability">
+                        <h2>E - TAILWIND</h2>
+                        <p>Instantly propel in the direction she is moving.</p>
+                        <video autoplay loop muted>
+                            <source src="Video/jet2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="ability">
+                        <h2>C - CLOUDBURST</h2>
+                        <p>Immediately throw a projectile that expands into a brief</p>
+                        <video autoplay loop muted>
+                            <source src="Video/jet3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="ability">
+                        <h2>X - BLADE STORM</h2>
+                        <p>Equip a set of highly accurate throwing knives.</p>
+                        <video autoplay loop muted>
+                            <source src="Video/jetultimate.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="abilitisagent2" class="abilitisagent2">
+            <div class="abilitisagent-content2">
+                <button class="close-popup2" onclick="closePopup()">Tutup</button>
+                <div class="header2">
+                    <img src="img/nova.png" alt="Jett Agent Image">
+                    <h1>NOVA</h1>
+                    <h2>INISIATOR</h2>
+                </div>
+                <div class="abilities2">
+                    <div class="ability2">
+                        <h2>SHOCKBOLT</h2>
+                        <p>Equip your bow with a shock bolt. Shoot to send out an explosive bolt,</p>
+                        <video autoplay loop muted>
+                            <source src="Video/nova1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="ability2">
+                        <h2>RECONBOLT</h2>
+                        <p>Equip your bow with a recon bolt. Shoot to fire a recon bolt forward,</p>
+                        <video autoplay loop muted>
+                            <source src="Video/nova2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="ability2">
+                        <h2>DRONE</h2>
+                        <p>Shoot to deploy and control the drone's movement. While controlling the drone, </p>
+                        <video autoplay loop muted>
+                            <source src="Video/nova3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="ability2">
+                        <h2>HUNTER'S FURY</h2>
+                        <p>Ready the bow with three long-range, wall-piercing energy blasts. </p>
+                        <video autoplay loop muted>
+                            <source src="Video/novaulti.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="abilitisagent3" class="abilitisagent3">
+            <div class="abilitisagent-content3">
+                <button class="close-popup3" onclick="closePopup()">Tutup</button>
+                <div class="header3">
+                    <img src="img/Grimstone.png" alt="Jett Agent Image">
+                    <h1>GRIMSTONE</h1>
+                    <h2>CONTOLLER</h2>
+                </div>
+                <div class="abilities3">
+                    <div class="ability3">
+                        <h2>INCENDIARY</h2>
+                        <p>to launch a grenade that explodes upon reaching the floor.</p>
+                        <video autoplay loop muted>
+                            <source src="Video/grim1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="ability3">
+                        <h2>SMOKE</h2>
+                        <p>to determine the landing location of the Brimstone smoke cloud.</p>
+                        <video autoplay loop muted>
+                            <source src="Video/grim2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="ability3">
+                        <h2>STIM BEACON</h2>
+                        <p>Shoot to launch a stim beacon in front of Brimstone. </p>
+                        <video autoplay loop muted>
+                            <source src="Video/grim3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="ability3">
+                        <h2>ORBITAL</h2>
+                        <p>shoot to launch a long-lasting orbital strike laser at a selected location. </p>
+                        <video autoplay loop muted>
+                            <source src="Video/grimultimate.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="abilitisagent4" class="abilitisagent4">
+            <div class="abilitisagent-content4">
+                <button class="close-popup4" onclick="closePopup()">Tutup</button>
+                <div class="header4">
+                    <img src="img/Amen.png" alt="Jett Agent Image">
+                    <h1>AMEN</h1>
+                    <h2>CONTOLLER</h2>
+                </div>
+                <div class="abilities4">
+                    <div class="ability4">
+                        <h2>PARANOID</h2>
+                        <p>Immediately fires a shadow projectile forward, reducing the field of view</p>
+                        <video autoplay loop muted>
+                            <source src="Video/amen1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="ability4">
+                        <h2>DARK COVER</h2>
+                        <p>Stand out shadow orb, enter the transition world to place and target orbs.</p>
+                        <video autoplay loop muted>
+                            <source src="Video/amen2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="ability4">
+                        <h2>SHROUDED STEP</h2>
+                        <p>Start the shadow walk ability and watch the range indicator.</p>
+                        <video autoplay loop muted>
+                            <source src="Video/amen3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="ability4">
+                        <h2>FROM SHADOWS</h2>
+                        <p>Start the tactical map. SHOOT to teleport to a selected location.</p>
+                        <video autoplay loop muted>
+                            <source src="Video/amenultimate.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="abilitisagent5" class="abilitisagent5">
+            <div class="abilitisagent-content5">
+                <button class="close-popup5" onclick="closePopup()">Tutup</button>
+                <div class="header5">
+                    <img src="img/Skyline.png" alt="Jett Agent Image">
+                    <h1>SKYLINE</h1>
+                    <h2>INISIATOR</h2>
+                </div>
+                <div class="abilities5">
+                    <div class="ability5">
+                        <h2>TRAILBLAZER</h2>
+                        <p>Stand alert the Tasmanian tiger ornament. Shoot to take it out and take control of the predator. </p>
+                        <video autoplay loop muted>
+                            <source src="Video/sky1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="ability5">
+                        <h2>GUIDING LIGHT</h2>
+                        <p>Stand THE falcon ornament. Shoot to launch it forward. Hold shot to guide the falcon towards your target marker.</p>
+                        <video autoplay loop muted>
+                            <source src="Video/sky2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="ability5">
+                        <h2>REGROWTH</h2>
+                        <p>Hold the healing ornament. Hold shot to channel, healing allies within ability range and line of sight.</p>
+                        <video autoplay loop muted>
+                            <source src="Video/sky3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="ability5">
+                        <h2>SEEKERS</h2>
+                        <p>Stand the Seeker decoration. Shoot to deploy three Seekers to track three nearby enemies.</p>
+                        <video autoplay loop muted>
+                            <source src="Video/skyultimate.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <img src="img/GG.png" class="cc">
+            <p>© 2025-2030 Giot Games. PALORANT dan semua logo atau elemen terkait merupakan hak cipta dan merek dagang resmi milik Giot Games Company. Hak cipta dilindungi undang-undang.
+                <br> 
+        </footer>
+    </section>
+    
+</body>
+
+</html>
