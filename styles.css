@@ -1,14 +1,18 @@
-/* @font-face {
-    font-family: 'Valorant';
-    src: url('Font/Valorant Font.ttf') format('truetype');
-} */
+@font-face {
+    font-family: 'Encode';
+    src: url('Font/EncodeSansCondensed-Medium.ttf') format('truetype');
+}
 
+@font-face {
+    font-family: 'OvercameBold';
+    src: url('Font/OvercameDemoBold.ttf') format('truetype');
+}
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica1
     /* background-color: #0d1821; */
     /* font-family: 'Valorant'; */
 }
@@ -80,6 +84,7 @@ body{
     transition: background-color 0.3s ease-in;
     margin: 0 10px;
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .menu-data {
@@ -88,9 +93,13 @@ body{
     align-items: center;
 }
 
+.menu-data a{
+    font-family: 'OvercameBold';
+}
+
 .data-container a:hover {
-    background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%);
-    color: rgb(0, 12, 34);
+    
+    color: rgb(255, 51, 66);
 }
 
 .size-icon {
@@ -210,7 +219,7 @@ h1 i{
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(216, 208, 208, 0.8);
+    background: rgba(117, 113, 113, 0.8);
     color: #fff;
     text-align: left;
     transform: translateY(100%);
@@ -224,6 +233,8 @@ h1 i{
 
 .menu-info h2{
     margin: 5px 0;
+    font-family: 'OvercameBold';
+    text-align: center;
 }
 
 .menu-info p {
@@ -270,6 +281,7 @@ h1 i{
     font-size: 4vw;
     font-weight: bold;
     margin-bottom: 10px;
+    font-family: 'OvercameBold';
 }
 
 .text-overlay button{
@@ -282,6 +294,7 @@ h1 i{
     background-color: rgb(222, 17, 51);
     color: aliceblue;
     margin-top: 15px;
+    font-family: 'Encode';
 }
 
 button:hover{
@@ -290,7 +303,8 @@ button:hover{
 
 .text-overlay p {
     font-size: 2vw; 
-    line-height: 1.5;
+    line-height: 1.5; 
+    font-family: 'Encode';
 }
 
 .content-section {
@@ -321,18 +335,21 @@ button:hover{
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 10px;
+    font-family: 'OvercameBold';
 }
 
 .text-container h3 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 20px;
+    font-family: 'Encode';
 }
 
 .text-container p {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 20px;
+    font-family: 'Encode';
 }
 
 .text-container button {
@@ -441,18 +458,21 @@ button:hover{
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 10px;
+    font-family: 'OvercameBold';
 }
 
 .text-container2 h3 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 20px;
+    font-family: 'Encode';
 }
 
 .text-container2 p {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 20px;
+    font-family: 'Encode';
 }
 
 .text-container2 button {
@@ -465,6 +485,7 @@ button:hover{
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: 'Encode';
 }
 
 .text-container2 button:hover {
@@ -489,6 +510,7 @@ footer .cc:hover{
 
 footer p{
     opacity: 50%;
+    font-family: 'Encode';
 }
 
 .card-all-maps{
@@ -517,11 +539,13 @@ footer p{
     font-size: 2vw;
     margin-bottom: 10px;
     text-align: center;
+    font-family: 'Encode';
 }
 
 .map-overlay p{
     font-size: 1.3vw;
     text-align: justify;
+    font-family: 'Encode';
 }
 
 .news-card{
@@ -555,6 +579,7 @@ footer p{
     font-size: 0.9rem;
     color: black;
     margin-bottom: 8px;
+    font-family: 'Encode';
 }
 
 .text-news h1{
@@ -562,6 +587,7 @@ footer p{
     font-weight: bold;
     margin-bottom: 10px;
     color: #e04f5b;
+    font-family: 'Encode';
 }
 
 .text-news p{
@@ -569,6 +595,7 @@ footer p{
     line-height: 1.6;
     margin-bottom: 20px;
     color: black;
+    font-family: 'Encode';
 }
 
 /* .title h1{
@@ -730,12 +757,14 @@ hr {
     font-weight: bold;
     color: white;
     margin: 0;
+    font-family: 'OvercameBold';
 }
 
 .bestagent-text h3 {
     font-size: 2em;
     color: #E04F5B;
     margin: 10px 0 0 0;
+    font-family: 'Encode';
 }
 
 @media (max-width: 1024px) {
@@ -845,6 +874,7 @@ hr {
     text-align: left;
     font-size: 60px;
     margin-left: 20px;
+    font-family: 'OvercameBold';
 }
 
 .abilitisagent .header h2 {
@@ -852,6 +882,7 @@ hr {
     flex: 1;
     text-align: left;
     font-size: 60px;
+    font-family: 'OvercameBold';
 }
 
 .abilitisagent .header img {
@@ -881,11 +912,13 @@ hr {
 .abilitisagent .ability h2 {
     font-size: 14px;
     color: #ff4a4a;
+    font-family: 'Encode';
 }
 
 .abilitisagent .ability p {
     color: whitesmoke;
     margin: 15px;
+    font-family: 'Encode';
 }
 
 .abilitisagent video {
@@ -968,6 +1001,7 @@ hr {
     text-align: left;
     font-size: 60px;
     margin-left: 20px;
+    font-family: 'OvercameBold';
 }
 
 .abilitisagent2 .header2 h2 {
@@ -975,6 +1009,7 @@ hr {
     flex: 1;
     text-align: left;
     font-size: 60px;
+    font-family: 'OvercameBold';
 }
 
 .abilitisagent2 .header2 img {
@@ -1004,11 +1039,13 @@ hr {
 .abilitisagent2 .ability2 h2 {
     font-size: 14px;
     color: #ff4a4a;
+    font-family: 'Encode';
 }
 
 .abilitisagent2 .ability2 p {
     color: whitesmoke;
     margin: 15px;
+    font-family: 'Encode';
 }
 
 .abilitisagent2 video {
@@ -1091,6 +1128,7 @@ hr {
     text-align: left;
     font-size: 60px;
     margin-left: 20px;
+    font-family: 'OvercameBold';
 }
 
 .abilitisagent3 .header3 h2 {
@@ -1098,6 +1136,7 @@ hr {
     flex: 1;
     text-align: left;
     font-size: 60px;
+    font-family: 'OvercameBold';
 }
 
 .abilitisagent3 .header3 img {
@@ -1127,11 +1166,13 @@ hr {
 .abilitisagent3 .ability3 h2 {
     font-size: 14px;
     color: #ff4a4a;
+    font-family: 'Encode';
 }
 
 .abilitisagent3 .ability3 p {
     color: whitesmoke;
     margin: 15px;
+    font-family: 'Encode';
 }
 
 .abilitisagent3 video {
@@ -1214,6 +1255,7 @@ hr {
     text-align: left;
     font-size: 60px;
     margin-left: 20px;
+    font-family: 'OvercameBold';
 }
 
 .abilitisagent4 .header4 h2 {
@@ -1221,6 +1263,7 @@ hr {
     flex: 1;
     text-align: left;
     font-size: 60px;
+    font-family: 'OvercameBold';
 }
 
 .abilitisagent4 .header4 img {
@@ -1250,11 +1293,13 @@ hr {
 .abilitisagent4 .ability4 h2 {
     font-size: 14px;
     color: #ff4a4a;
+    font-family: 'Encode';
 }
 
 .abilitisagent4 .ability4 p {
     color: whitesmoke;
     margin: 15px;
+    font-family: 'Encode';
 }
 
 .abilitisagent4 video {
@@ -1337,6 +1382,7 @@ hr {
     text-align: left;
     font-size: 60px;
     margin-left: 20px;
+    font-family: 'OvercameBold';
 }
 
 .abilitisagent5 .header5 h2 {
@@ -1344,6 +1390,7 @@ hr {
     flex: 1;
     text-align: left;
     font-size: 60px;
+    font-family: 'OvercameBold';
 }
 
 .abilitisagent5 .header5 img {
@@ -1373,11 +1420,13 @@ hr {
 .abilitisagent5 .ability5 h2 {
     font-size: 14px;
     color: #ff4a4a;
+    font-family: 'Encode';
 }
 
 .abilitisagent5 .ability5 p {
     color: whitesmoke;
     margin: 15px;
+    font-family: 'Encode';
 }
 
 .abilitisagent5 video {
@@ -1453,6 +1502,7 @@ hr {
     color: #ff4a4a;
     text-align: center;
     margin-bottom: 25px;
+    font-family: 'OvercameBold';
 }
 
 .contact-form {
@@ -1520,6 +1570,7 @@ hr {
     cursor: pointer;
     text-transform: uppercase;
     margin-top: 10px;
+    font-family: 'OvercameBold';
 }
 
 @media screen and (max-width: 768px) {
