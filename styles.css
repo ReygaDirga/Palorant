@@ -13,13 +13,14 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica1
-    /* background-color: #0d1821; */
-    /* font-family: 'Valorant'; */
+}
+
+.agentpages{
+    height: 100px;
 }
 
 body{
     background-color: #ECE8E1;
-    /* font-family: 'Valorant'; */
 }
 
 .hero-section {
@@ -27,18 +28,6 @@ body{
     flex-direction: column;
     height: 10vh;
     width: 100%;    
-}
-
-.hero-hero{
-    height: 109vh;
-    width: 100%;
-    background-color: blue;
-}
-
-.pidio{
-    position: relative;
-    width: 100%;
-    height: 50%;
 }
 
 .navbar {
@@ -98,7 +87,6 @@ body{
 }
 
 .data-container a:hover {
-    
     color: rgb(255, 51, 66);
 }
 
@@ -126,33 +114,6 @@ body{
     display: none;
 }
 
-@media (max-width:761px) {
-    .menu-data {
-        position: fixed;
-        flex-direction: column;
-        background-color: black;
-        top: 60px; 
-        left: -100%;
-        width: 250px;
-        padding: 20px;
-        transition: 0.3s ease-in-out;
-    }
-
-    .menu-data.active {
-        right: 0; 
-    }
-
-    #Menu-bar {
-        display: block;
-    }
-
-    #close {
-        display: block;
-        align-self: flex-end;
-        margin-bottom: 10px;
-        cursor: pointer;
-    }
-}
 .hero-section-content {
     width: 100%;
     height: 100%;
@@ -178,13 +139,16 @@ body{
     text-align: center;
     padding: 10px 15px;
 }
-h1 i{
-    color: rgb(255, 96, 123);
-}
 
 .menu {
+    margin: 50px auto;
     width: 100%;
-    margin-top: 7rem;
+}
+
+.menu h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'OvercameBold';
 }
 
 .menu-grid {
@@ -494,9 +458,10 @@ button:hover{
 
 footer{
     text-align: center;
-    padding: 15vh;
+    padding: 10vh;
     background-color: black;
     color: white;
+    bottom: 0;
 }
 
 footer .cc{
@@ -514,7 +479,13 @@ footer p{
 }
 
 .card-all-maps{
-    margin-top: 20vh;
+    margin-top: 5vh;
+}
+
+.card-all-maps h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'OvercameBold';
 }
 
 .card-maps {
@@ -598,99 +569,7 @@ footer p{
     font-family: 'Encode';
 }
 
-/* .title h1{
-    font-size: xx-large;
-    margin-top: 10vw;
-    text-align: center;
-} */
-
-@media (max-width: 768px) {
-    .content-section2 {
-        flex-direction: column; 
-        text-align: center;
-    }
-    .video-container2, .text-container2 {
-        max-width: 100%; 
-    }
-    .news-card {
-        flex-direction: column; 
-        text-align: center;
-    }
-    .img-news, .text-news {
-        max-width: 100%; 
-    }
-    .card-maps {
-        flex-direction: column; 
-        text-align: center;
-    }
-    .text-overlay h1 {
-        font-size: 8vw; 
-    }
-    .text-overlay p {
-        font-size: 4vw;
-    }
-    .img-maps{
-        max-width: 100%; 
-    }
-    .card-all-maps {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
-    .map-overlay h2 {
-        font-size: 1.2rem;
-    }
-
-    .map-overlay p {
-        font-size: 0.9rem;
-    }
-    .text-overlay2 h1 {
-        font-size: 8vw; 
-    }
-    .text-overlay2 p {
-        font-size: 4vw;
-    }
-    footer {
-        font-size: 0.8rem;
-    }
-    .content-section {
-        flex-direction: column; 
-        text-align: center;
-    }
-    .video-container, .text-container {
-        max-width: 100%; 
-    }
-}
-
-@media (max-width: 480px) {
-    .Logo {
-        width: 100px;
-    }
-    .text-overlay2 h1 {
-        font-size: 10vw; 
-    }
-    .text-overlay2 p {
-        font-size: 5vw;
-    }
-    .map-overlay h2 {
-        font-size: 1rem;
-    }
-    .text-overlay h1 {
-        font-size: 10vw; 
-    }
-    .text-overlay p {
-        font-size: 5vw;
-    }
-    .map-overlay p {
-        font-size: 0.8rem;
-    }
-
-    footer {
-        font-size: 0.7rem;
-    }
-}
-
 .news-section {
-    margin: 100px auto 0;
     max-width: 1200px;
     padding: 20px;
 }
@@ -765,58 +644,6 @@ hr {
     color: #E04F5B;
     margin: 10px 0 0 0;
     font-family: 'Encode';
-}
-
-@media (max-width: 1024px) {
-    .bestagent-text h1 {
-        font-size: 2.5em;
-    }
-    .bestagent-text h3 {
-        font-size: 1.8em;
-    }
-}
-
-@media (max-width: 768px) {
-    .content-bestagent {
-        height: 85vh;
-        padding: 15px;
-    }
-    .image-container {
-        height: 50%;
-    }
-    .bestagent-text {
-        height: 50%;
-        padding: 15px;
-    }
-    .bestagent-text h1 {
-        font-size: 2.2em;
-    }
-    .bestagent-text h3 {
-        font-size: 1.5em;
-    }
-    .image-best{
-        width: 70%;
-    }
-}
-
-@media (max-width: 480px) {
-    .content-bestagent {
-        height: 80vh;
-        padding: 10px;
-    }
-    .image-container {
-        height: 45%;
-    }
-    .bestagent-text {
-        height: 55%;
-        padding: 10px;
-    }
-    .bestagent-text h1 {
-        font-size: 1.8em;
-    }
-    .bestagent-text h3 {
-        font-size: 1.3em;
-    }
 }
 
 .abilitisagent {
@@ -926,26 +753,6 @@ hr {
     border-radius: 10px;
 }
 
-@media (max-width: 768px) {
-    .abilitisagent .abilities {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .abilitisagent .header {
-        flex-direction: column;
-        text-align: center;
-    }
-    .abilitisagent .header h1 {
-        text-align: center;
-        font-size: 48;
-    }
-}
-
-@media (max-width: 480px) {
-    .abilitisagent .abilities {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
 .abilitisagent2 {
     display: none;
     position: fixed;
@@ -1051,26 +858,6 @@ hr {
 .abilitisagent2 video {
     width: 100%;
     border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-    .abilitisagent2 .abilities2 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .abilitisagent2 .header2 {
-        flex-direction: column;
-        text-align: center;
-    }
-    .abilitisagent2 .header2 h1 {
-        text-align: center;
-        font-size: 48;
-    }
-}
-
-@media (max-width: 480px) {
-    .abilitisagent2 .abilities2 {
-        grid-template-columns: repeat(1, 1fr);
-    }
 }
 
 .abilitisagent3 {
@@ -1180,26 +967,6 @@ hr {
     border-radius: 10px;
 }
 
-@media (max-width: 768px) {
-    .abilitisagent3 .abilities3 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .abilitisagent3 .header3 {
-        flex-direction: column;
-        text-align: center;
-    }
-    .abilitisagent3 .header3 h1 {
-        text-align: center;
-        font-size: 48;
-    }
-}
-
-@media (max-width: 480px) {
-    .abilitisagent3 .abilities3 {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
 .abilitisagent4 {
     display: none;
     position: fixed;
@@ -1305,26 +1072,6 @@ hr {
 .abilitisagent4 video {
     width: 100%;
     border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-    .abilitisagent4 .abilities4 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .abilitisagent4 .header4 {
-        flex-direction: column;
-        text-align: center;
-    }
-    .abilitisagent4 .header4 h1 {
-        text-align: center;
-        font-size: 48;
-    }
-}
-
-@media (max-width: 480px) {
-    .abilitisagent4 .abilities4 {
-        grid-template-columns: repeat(1, 1fr);
-    }
 }
 
 .abilitisagent5 {
@@ -1434,27 +1181,6 @@ hr {
     border-radius: 10px;
 }
 
-@media (max-width: 768px) {
-    .abilitisagent5 .abilities5 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .abilitisagent5 .header5 {
-        flex-direction: column;
-        text-align: center;
-    }
-    .abilitisagent5 .header5 h1 {
-        text-align: center;
-        font-size: 48;
-    }
-}
-
-@media (max-width: 480px) {
-    .abilitisagent5 .abilities5 {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-
 .img-news {
     position: relative;
     display: inline-block;
@@ -1488,11 +1214,9 @@ hr {
 }
 
 .wrapper {
-    top: 100px;
-    position: relative;
+    margin: 150px auto;
     width: 90%;
     max-width: 800px;
-    margin: auto;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -1573,7 +1297,166 @@ hr {
     font-family: 'OvercameBold';
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 1024px) {
+    .bestagent-text h1 {
+        font-size: 2.5em;
+    }
+    .bestagent-text h3 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-section2 {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .video-container2, .text-container2 {
+        max-width: 100%; 
+    }
+    .news-card {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .img-news, .text-news {
+        max-width: 100%; 
+    }
+    .card-maps {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .text-overlay h1 {
+        font-size: 8vw; 
+    }
+    .text-overlay p {
+        font-size: 4vw;
+    }
+    .img-maps{
+        max-width: 100%; 
+    }
+    .card-all-maps {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .map-overlay h2 {
+        font-size: 1.2rem;
+    }
+    .map-overlay p {
+        font-size: 0.9rem;
+    }
+    .text-overlay2 h1 {
+        font-size: 8vw; 
+    }
+    .text-overlay2 p {
+        font-size: 4vw;
+    }
+    footer {
+        font-size: 0.8rem;
+    }
+    .content-section {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .video-container, .text-container {
+        max-width: 100%; 
+    }
+    .menu-data {
+        position: fixed;
+        flex-direction: column;
+        background-color: black;
+        top: 60px; 
+        left: -100%;
+        width: 250px;
+        padding: 20px;
+        transition: 0.3s ease-in-out;
+    }
+    .menu-data.active {
+        right: 0; 
+    }
+
+    #Menu-bar {
+        display: block;
+    }
+    #close {
+        display: block;
+        align-self: flex-end;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    .abilitisagent5 .abilities5 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .abilitisagent5 .header5 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .abilitisagent5 .header5 h1 {
+        text-align: center;
+        font-size: 48;
+    }
+    .abilitisagent4 .abilities4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .abilitisagent4 .header4 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .abilitisagent4 .header4 h1 {
+        text-align: center;
+        font-size: 48;
+    }
+    .abilitisagent3 .abilities3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .abilitisagent3 .header3 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .abilitisagent3 .header3 h1 {
+        text-align: center;
+        font-size: 48;
+    }
+    .abilitisagent2 .abilities2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .abilitisagent2 .header2 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .abilitisagent2 .header2 h1 {
+        text-align: center;
+        font-size: 48;
+    }
+    .abilitisagent .abilities {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .abilitisagent .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .abilitisagent .header h1 {
+        text-align: center;
+        font-size: 48;
+    }
+    .content-bestagent {
+        height: 85vh;
+        padding: 15px;
+    }
+    .image-container {
+        height: 50%;
+    }
+    .bestagent-text {
+        height: 50%;
+        padding: 15px;
+    }
+    .bestagent-text h1 {
+        font-size: 2.2em;
+    }
+    .bestagent-text h3 {
+        font-size: 1.5em;
+    }
+    .image-best{
+        width: 70%;
+    }
     .contact-form {
         flex-direction: column;
     }
@@ -1587,7 +1470,63 @@ hr {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
+    .abilitisagent5 .abilities5 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .abilitisagent4 .abilities4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .abilitisagent3 .abilities3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .abilitisagent2 .abilities2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .abilitisagent .abilities {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .content-bestagent {
+        height: 80vh;
+        padding: 10px;
+    }
+    .image-container {
+        height: 45%;
+    }
+    .bestagent-text {
+        height: 55%;
+        padding: 10px;
+    }
+    .bestagent-text h1 {
+        font-size: 1.8em;
+    }
+    .bestagent-text h3 {
+        font-size: 1.3em;
+    }
+    .Logo {
+        width: 100px;
+    }
+    .text-overlay2 h1 {
+        font-size: 10vw; 
+    }
+    .text-overlay2 p {
+        font-size: 5vw;
+    }
+    .map-overlay h2 {
+        font-size: 1rem;
+    }
+    .text-overlay h1 {
+        font-size: 10vw; 
+    }
+    .text-overlay p {
+        font-size: 5vw;
+    }
+    .map-overlay p {
+        font-size: 0.8rem;
+    }
+    footer {
+        font-size: 0.7rem;
+    }
     .wrapper {
         padding: 20px;
     }

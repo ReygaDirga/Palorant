@@ -19,6 +19,16 @@ window.onclick = function(event) {
     }
 };
 
+window.addEventListener("resize", function () {
+    if(window.innerWidth > 768){
+        document.querySelector(".menu-data").classList.remove("active");
+        document.getElementById("Menu-bar").style.display = "none";
+        document.getElementById("close-icon").style.display = "none";
+    }else{
+        document.getElementById("Menu-bar").style.display = "block";
+    }
+});
+
 
 function goToAgentPage() {
     window.location.href = "AgentPage.html";

@@ -2,59 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="img/2.ico" type="image/x-icon">
-    <title>Palorant</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="img/2.ico" type="image/x-icon" />
+  <script src="query.js" defer></script>
+  <title>Palorant</title>
 </head>
 
 <body>
-    <section class="hero-section">
-      <nav class="navbar">
-        <div class="data-container">
-            <img src="img/GG.png" class="gg">
-            <img src="img/text.png" class="Logo">
-            <div id="menu-time" class="menu-data ">
-                <a id="close-icon" onclick="closebar()">X</a>
-                <a href="index.html">HOME</a>
-                <a href="AgentPage.html">AGENT</a>
-                <a href="MapsPage.html">MAPS</a>
-                <a href="NewsPage.html">NEWS</a>
-                <a href="report.html">REPORT</a>
-            </div>
-            <a id="Menu-bar" onclick="menubar()">&#8801;</a>
+  <section class="hero-section">
+    <nav class="navbar">
+      <div class="data-container">
+        <img src="img/GG.png" class="gg" />
+        <img src="img/text.png" class="Logo" />
+        <div id="menu-time" class="menu-data">
+          <a id="close-icon" onclick="closebar()">X</a>
+          <a href="index.html">HOME</a>
+          <a href="AgentPage.html">AGENT</a>
+          <a href="MapsPage.html">MAPS</a>
+          <a href="NewsPage.html">NEWS</a>
+          <a href="report.html">REPORT</a>
         </div>
-    </nav>
-    </section>
-    <div class="wrapper">
-      <div class="title">
-        <h1>REPORT FORM</h1>
+        <a id="Menu-bar" onclick="menubar()">&#8801;</a>
       </div>
-        <div class="contact-form">  
-          <div class="input-fields">
-            <input type="text" id="username" class="input" name="username" placeholder="Username">
-            <input type="text" id="email" class="input" name="email" placeholder="Email Address">
-            <select name="server" id="server" class="input">
-                <option value="">-- Select Server --</option>
-                <option value="Asia">Asia</option>
-                <option value="Eropa">Eropa</option>
-                <option value="Australia">Australia</option>
-                <option value="US">US</option>
-            </select>
-            <label>
-              <input type="checkbox" id="followup"> I agree to receive follow-up emails.
-            </label>
-            <span class="error" id="followup-error"></span>
-          </div>
-          <div class="msg">
-            <textarea name="description" id="description" placeholder="Description of the bug"></textarea>
-            <div class="baten" onclick="validateForm()">send</div>
-          </div> 
-        </div>
+    </nav>
+  </section>
+
+  <div class="wrapper">
+    <div class="title">
+      <h1>REPORT FORM</h1>
     </div>
-    
-    <script src="query.js"></script>
+    <div class="contact-form">
+      <div class="input-fields">
+        <input type="text" id="username" class="input" name="username" placeholder="Username" />
+        <input type="text" id="email" class="input" name="email" placeholder="Email Address" />
+        <select name="server" id="server" class="input">
+          <option value="">-- Select Server --</option>
+          <option value="Asia">Asia</option>
+          <option value="Eropa">Eropa</option>
+          <option value="Australia">Australia</option>
+          <option value="US">US</option>
+        </select>
+        <label>
+          <input type="checkbox" id="followup" /> I agree to receive follow-up
+          emails.
+        </label>
+        <span class="error" id="followup-error"></span>
+      </div>
+      <div class="msg">
+        <textarea name="description" id="description" placeholder="Description of the bug"></textarea>
+        <div class="baten" onclick="validateForm()">send</div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <img src="img/GG.png" class="cc" />
+    <p>
+      © 2025-2030 Giot Games. PALORANT dan semua logo atau elemen terkait
+      merupakan hak cipta dan merek dagang resmi milik Giot Games Company. Hak
+      cipta dilindungi undang-undang.
+      <br />
+    </p>
+  </footer>
 </body>
 
 </html>
