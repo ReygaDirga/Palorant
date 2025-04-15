@@ -15,6 +15,7 @@
     font-family: Arial, Helvetica1
 }
 
+
 .agentpages{
     height: 100px;
 }
@@ -141,7 +142,7 @@ body{
 }
 
 .menu {
-    margin: 50px auto;
+    margin: 100px auto;
     width: 100%;
 }
 
